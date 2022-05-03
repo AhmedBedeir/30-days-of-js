@@ -1,0 +1,58 @@
+:root {
+  --baseColor: #0f0f1b;
+  --secColor: #171727;
+  --hoverColor: #242486;
+  --textColor: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  list-style: none;
+}
+body {
+  background-color: var(--baseColor);
+  color: var(--textColor);
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+}
+h1 {
+  margin: 45px auto 10px;
+  text-align: center;
+  max-width: 90%;
+}
+p {
+  text-align: center;
+  font-weight: 100;
+  padding-bottom: 15px;
+  max-width: 100%;
+}
+ul {
+  display: grid;
+  width: 80%;
+  margin: 30px auto;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+}
+ul a {
+  color: var(--textColor);
+  font-weight: 100;
+  font-size: 16px;
+}
+ul a :hover {
+  background-color: var(--hoverColor);
+}
+ul li {
+  background-color: var(--secColor);
+  padding: 20px;
+  height: 100px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: var(--hoverColor);
+}
